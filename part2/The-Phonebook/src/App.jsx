@@ -35,7 +35,6 @@ const displayperson=search==''?persons:persons.filter((person)=>person.name.toLo
 const hook=()=>{
   axios.get('http://localhost:3001/persons')
     .then((response)=>{
-      console.log('persons',response.data)
       setPersons(response.data)
     })
     
